@@ -1,0 +1,170 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff; /* White background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Light gray border bottom */
+}
+
+.logo {
+  font-size: 24px;
+  color: #333;
+}
+
+.nav-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd; /* Light gray border bottom */
+}
+
+.post-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.post-content {
+  line-height: 1.6;
+  color: #555;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto;   /* Allow vertical scrolling */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh; /* Ensure the App takes at least the full viewport height */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.navbar {
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between; /* Space between logo and nav links */
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.blog-post {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+
+.blog-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.blog-text {
+  flex: 1;
+}
+
+.blog-meta {
+  font-style: italic;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .blog-post {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-links {
+    gap: 10px;
+    font-size: 16px;
+  }
+}
