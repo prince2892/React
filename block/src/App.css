@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh; /* Ensure the App takes at least the full viewport height */
+  min-height: auto; /* Ensure the App takes at least the full viewport height */
   box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
 
